@@ -1,0 +1,48 @@
+Read mode:=
+It will read the content from the file
+eg: myfile=open("myfile.txt","r")
+    myfile.read()
+write mode:=
+ It will write the content to the file
+eg:myfile=open("myfile.txt","w")
+
+myfile.write()
+
+Append mode:=
+ it will append the content to the file..
+
+Calculator with python language
+
+
+ def user():
+ x=int(input ("Enterthe value of x:"))
+ y=int(input("Enter the value of y:"))
+ i=int(input("enter i"))
+ a=0
+ if i==1:
+    a=x+y
+    print("Addition of two numbers",a)
+    return a
+ elif i==2:
+    a=x-y
+    print("Subtraction of two numbers",a)
+    return a
+ elif i==3:
+   a=x*y
+   print("Multiplication of two numbers",a)
+   return a
+ elif i==4:
+   a=x/y
+   print("Division of two numbers",a)
+   return a
+ else:
+      print("invalid")
+      return a
+      
+
+b=user()
+myfile=open("myfile.txt","w")
+rec=str(b)+'\n'
+myfile.write(rec)
+print(myfile)
+myfile.close()
